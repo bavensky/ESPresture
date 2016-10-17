@@ -93,7 +93,8 @@ void loop() {
   Serial.println(soilVal);
   delay(200);
   
-  char ch = digits[soilVal];
+//  char ch = digits[soilVal];
+  char ch = 1;
   lc.displayChar(0, lc.getCharArrayPosition(ch));
 
 
