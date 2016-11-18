@@ -86,15 +86,15 @@ void setup() {
 void loop() {
   soilValue = analogRead(SOIL);
 
-  int soilVal = map(analogRead(SOIL), 0, 110, 0, 9);
+  int soilVal = map(analogRead(SOIL), 0, 500, 0, 9);
   
   Serial.print(soilValue);
   Serial.print(" ");
   Serial.println(soilVal);
   delay(200);
   
-//  char ch = digits[soilVal];
-  char ch = 1;
+  char ch = digits[soilVal];
+//  char ch = 1;
   lc.displayChar(0, lc.getCharArrayPosition(ch));
 
 
